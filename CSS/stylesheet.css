@@ -192,6 +192,19 @@ a#footerlink:hover {
   color: #FFFFFF;
 }
 
+/*About Page*/
+.skillsabout {
+    display: flex;
+    justify-content: center;
+}
+
+.skillitem {
+    padding: 50px;
+}
+
+.about1{
+    padding:40px;
+}
 
 
 /*TABLET & DESKTOP CHANGES*/

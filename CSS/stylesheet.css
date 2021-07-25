@@ -43,10 +43,15 @@ a#websitelinks:hover {
 
 
 /*GENERAL SETUP*/
-p, ul{
+ul{
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     line-height: 50px;
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 40px;  
 }
 
 h1 {
@@ -69,10 +74,9 @@ body {
 
 iframe {
     border-radius: 35px;
-    width: 120%;
+    margin: 40px;
+    margin-bottom: 0px;
 }
-
-
 
 
 /*ALL PAGES*/
@@ -180,6 +184,33 @@ img.navimage:hover {
   border: 10px solid #ABC3CE;
 }
 
+.worksection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.workitemsection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.workitem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 400px;
+}
+
+.frametext{
+    width: 400px;
+}
+
+
+
+
 /*TABLET & DESKTOP CHANGES*/
 @media screen and (min-width: 1200px){
 
@@ -216,8 +247,11 @@ img.navimage:hover {
     #logo{
         width: 15%;
     }
-    iframe{
-        width: 900px;
+    iframe.magazine{
+        width: 1000px;
     }
-
+    
+    .frametext {
+    width: 1000px;
+    }
 }

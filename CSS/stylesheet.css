@@ -52,8 +52,8 @@ p, ul{
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 60px;
+    line-height: 60px;
 }
 
 h2{
@@ -70,10 +70,6 @@ body {
 iframe {
     border-radius: 35px;
     width: 120%;
-}
-
-img {
-    padding: 20px;
 }
 
 
@@ -135,6 +131,9 @@ main {
     border-top-width: 0px;
     height: 1050px;
 }
+.sidebarphoto{
+    padding:20px;
+}
 
 .skills {
     height: 600px;
@@ -151,6 +150,35 @@ main {
     padding-top: 0px;
 }
 
+
+/*Works Page*/
+.portfoliotitle{
+    display: flex;
+    justify-content: center;
+}
+    /*Navigation*/
+.portfoliolinks{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.navitem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.navimage{
+  border-radius: 50%;
+border: 10px solid #636F75;
+    padding: 10px;
+    margin:5px;
+}
+
+
+img.navimage:hover {
+  border: 10px solid #ABC3CE;
+}
 
 /*TABLET & DESKTOP CHANGES*/
 @media screen and (min-width: 1200px){

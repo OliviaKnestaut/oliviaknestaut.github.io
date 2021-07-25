@@ -48,12 +48,14 @@ p, ul{
     font-size: 25px;
     line-height: 50px;
 }
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     font-size: 40px;
     line-height: 40px;
 }
+
 h2{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -61,8 +63,9 @@ h2{
     line-height: 30px;
 }
 
-body {margin: 0;}
-
+body {
+    margin: 0;
+}
 
 iframe {
     border-radius: 35px;
@@ -73,11 +76,15 @@ img {
     padding: 20px;
 }
 
-/*BODY*/
+
+
+
+/*ALL PAGES*/
 main {
     width: 100%;
     height: 100%;
 }
+
 .headerfooter {
     background: #ABC3CE; /*Blue*/
     display: flex;
@@ -100,21 +107,23 @@ main {
     border: 10px solid #636F75;
     border-top: 0px;
 }
+#footermargin{
+    margin-top: 20px;
+}
+
+
+/*HOME PAGE*/
 .myface{
     border-radius: 50%;
     padding: 0px;
 }
-.works {
-    background: #FFFFFF;
-    padding: 25px;
-}
+
 .flex-container{
     display: flex;
     flex-direction: column;
     align-items: center
 }
 .sidebar {
-
     padding: 30px;
     background: #ABC3CE; /*Blue*/
     border-bottom-right-radius: 80px;
@@ -127,13 +136,6 @@ main {
     height: 1050px;
 }
 
-.logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-/*SKILLS SECTION*/
 .skills {
     height: 600px;
     width: 300px;
@@ -141,66 +143,17 @@ main {
     color: #636F75; 
 }
 
-
-/*FOOTER*/
-.footer {
-    background: #ABC3CE;
-    display: flex;
-}
-
-.footeritem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.footerimage {
-    border-radius: 0px;
-}
-
-#email {
-    color: #FFFFFF;
-}
-a#instalink {
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-}
-
-a#instalink:hover {
-    color: #E88CBA;
-}
-
-a#footerlink{
-    color: #e88CBA;
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-}
-a#footerlink:hover {
-  color: #FFFFFF;
-}
-
-/*About Page*/
-.skillsabout {
-    display: flex;
-    justify-content: center;
-}
-
-.skillitem {
-    padding: 50px;
-}
-
 .about1{
     padding:40px;
+}
+.about2{
+     padding:40px;
+    padding-top: 0px;
 }
 
 
 /*TABLET & DESKTOP CHANGES*/
-@media screen and (min-width: 960px){
+@media screen and (min-width: 1200px){
 
 
 .links {
@@ -217,6 +170,9 @@ a#footerlink:hover {
     .sidebar{
         height:1050px;
     }
+    .about2{
+     padding:40px;
+}
 
 .footercontent{
     display: flex;

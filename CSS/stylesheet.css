@@ -121,7 +121,7 @@ main {
 .flex-container{
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
 }
 .sidebar {
     padding: 30px;
@@ -148,10 +148,16 @@ main {
 
 .about1{
     padding:40px;
+    padding-bottom: 0px;
 }
 .about2{
-     padding:40px;
+    padding: 40px;
     padding-top: 0px;
+}
+.APClasses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 
@@ -159,6 +165,8 @@ main {
 .portfoliotitle{
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
     /*Navigation*/
 .portfoliolinks{
@@ -229,9 +237,6 @@ img.navimage:hover {
     .sidebar{
         height:1050px;
     }
-    .about2{
-     padding:40px;
-}
 
 .footercontent{
     display: flex;
@@ -247,7 +252,7 @@ img.navimage:hover {
     #logo{
         width: 15%;
     }
-    iframe.magazine{
+    .magazine{
         width: 1000px;
     }
     

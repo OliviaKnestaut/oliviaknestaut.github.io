@@ -122,6 +122,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .sidebar {
     padding: 30px;
@@ -134,9 +135,6 @@ main {
     border-width: 10px;
     border-top-width: 0px;
     height: 1050px;
-}
-.sidebarphoto{
-    padding:20px;
 }
 
 .skills {
@@ -258,5 +256,8 @@ img.navimage:hover {
     
     .frametext {
     width: 1000px;
+    }
+    iframe{
+        height: 500px;
     }
 }

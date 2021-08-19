@@ -210,8 +210,26 @@ img.navimage:hover {
     width: 400px;
 }
 
+.magazineitem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .frametext{
     width: 400px;
+}
+
+.othercontent{
+    width: 90%;
+    height: 200px; 
+}
+
+.workitem2{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 
@@ -259,5 +277,10 @@ img.navimage:hover {
     }
     iframe{
         height: 600px;
+    }
+    
+    .othercontent{
+    width: 90%;
+    height: 500px; 
     }
 }

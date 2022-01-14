@@ -163,11 +163,30 @@ main {
     align-items: center;
     text-align: center;
 }
+
+
+/*Awards Page*/
+
+.awardblock{
+    margin: 40px;
+}
+.award{
+    background: #8FAA95; /*Green*/
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+}
+
+
     /*Navigation*/
 .portfoliolinks{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-bottom: 40px;
 }
 .navitem{
     display: flex;

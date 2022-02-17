@@ -70,7 +70,6 @@ body {
 }
 
 embed {
-    border-radius: 35px;
     margin: 40px;
     margin-bottom: 0px;
 }
@@ -216,7 +215,7 @@ img.navimage:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 .workitem{
     display: flex;
@@ -224,12 +223,6 @@ img.navimage:hover {
     align-items: center;
     padding: 20px;
     width: 400px;
-}
-
-.magazineitem{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .frametext{
@@ -284,13 +277,7 @@ img.navimage:hover {
     #logo{
         width: 15%;
     }
-    .magazine{
-        width: 1000px;
-    }
     
-    .frametext {
-    width: 1000px;
-    }
     iframe{
         height: 600px;
     }

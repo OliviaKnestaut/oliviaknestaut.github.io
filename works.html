@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <title>Olivia Knestaut Porfolio Website</title>
     <link href="CSS/stylesheet.css" type="text/css" rel="stylesheet" />
+    <link href="CSS/works.css" type="text/css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&display=swap" rel="stylesheet">
 </head>
 <body>
+
+
    <!-- Header -->
-    <header class="headerfooter">
+<div class="roundingboxheader1">
+    <header class="header">
         <img class="logo" src="Images/OliviaLogoGrey.png" alt="">
     </header>
+</div>
 
     <!-- Links -->
     <section class="links">
-            <a href="index.html">home</a>
-            <a href="works.html">works</a>
-            <a href="awards.html">awards</a>
-            <a href="contact.html">contact</a>
-    </section>
+        <a href="index.html">home</a>
+        <a href="works.html">works</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+</section>
     
     <!-- Works-->
     <div class="portfoliotitle">
@@ -28,81 +33,129 @@
     </div>
     
     <div class="portfoliolinks">
-        
+        <div class="navitem">
+            <h2><strong>digital</strong></h2>
+            <a href="works.html#digitallink"><img class="navimage" src="Images/NavImages/MediaNavImage.jpg" alt="" width="150px"></a>
+        </div>
         <div class="navitem">
             <h2><strong>print</strong></h2>
-            <a href="#printlink"><img class="navimage" src="Images/NavImages/PrintNavImage.png" alt="" width="150px"></a>
+            <a href="works.html#printlink"><img class="navimage" src="Images/NavImages/PrintNavImage.png" alt="" width="150px"></a>
         </div>
         <div class="navitem">
             <h2><strong>web</strong></h2>
-            <a href="#weblink"><img class="navimage" src="Images/NavImages/Webnavimage.png" alt="" width="150px"></a>
+            <a href="works.html#weblink"><img class="navimage" src="Images/NavImages/Webnavimage.png" alt="" width="150px"></a>
         </div>
         <div class="navitem">
             <h2><strong>other</strong></h2>
-            <a href="#otherlink"><img class="navimage" src="Images/NavImages/VideoNav.png" alt="" width="150px"></a>
+            <a href="works.html#otherlink"><img class="navimage" src="Images/NavImages/VideoNav.png" alt="" width="150px"></a>
         </div>
     </div>
     
     <div class="works">
        
+        <!-- DIGITAL DESIGN -->
         
-        
-        <div class="worksection">
+
+        <div class="worksection digitaldesign">
+            <h1 id="digitallink"><em>digital design</em></h1>
+            
+            <ul class="workitemsection">
+                <li class="workitem">
+                    <img class = "workimage image" src="Images/PrintDesign/Auras.png" alt="" >
+                    <div class ="caption">
+                        <div class="blur"></div>
+                        <div class = "caption-text">
+                            <h1><em>Auras</em></h1>
+                            <p>Whatever it is - ALways Awesome</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="workitem">
+                    <img class = "workimage image" src="Images/PrintDesign/BeetleSquared.png" alt="" >
+                    <div class ="caption">
+                        <div class="blur"></div>
+                        <div class = "caption-text">
+                            <h1><em>Beetle Squared</em></h1>
+                            <p>Whatever it is - ALways Awesome</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="workitem">
+                    <img class = "workimage image" src="Images/Logos/OliviaDETSAPinDesign2021(2ndPlace).png" alt="" >
+                    <div class ="caption">
+                        <div class="blur"></div>
+                        <div class = "caption-text">
+                            <h1><em>Caption</em> </h1>
+                            <p>Whatever it is - ALways Awesome</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+                
+            <div class="backtotop">
+                <a href="works.html#header">back to top</a>
+            </div>
+        </div>
+
+        <!-- PRINT DESIGN -->
+    <div class="outerbox1">
+        <div class="worksection printdesign">
             <h1 id="printlink"><em>print design</em></h1>
             <div class="workitemsection">
-                <div class="workitem">
-                    <img src="Images/PrintDesign/Auras.png" alt="" width="400px">
-                     <p></p>
-                 </div>
-                 <div class="workitem">
-                    <img src="Images/PrintDesign/BeetleSquared.png" alt="" width="400px">
-                     <p></p>
-                 </div>
-                <div class="workitem">
-                    <img src="Images/Logos/OliviaDETSAPinDesign2021(2ndPlace).png" alt="" width="400px">
-                     <p>2nd place pin design at Technology Student Association Delaware 
-                         State Confrence 2021.</p>
-                 </div>
-                <div class="workitem">
-                    <embed class="magazine" src="Images/PrintDesign/OliviaMagazineArticlePages.pdf" width="400px" height="400px" type="application/pdf">
-                    <p class="frametext">This magazine article and spread was created for a 
-                        school magazine. </p>
+                <div class="workitem" data-hover="Money for Your Memories Magazine Spread Design, 2020, Adobe Illustrator & InDesign">
+                    <embed class="workimage" src="Images/PrintDesign/OliviaMagazineArticlePages.pdf" height = "600px" type="application/pdf">
+                        
                 </div>
-                <div class="workitem">
-                    <embed src="Images/PrintDesign/OliviaBusinessCardModifiedFull.pdf" width="400px" height="400px" type="application/pdf">
-                    <p> This business card is meant to be folded on the dotted lines 
-                        on the back to be a minature laptop.</p>
-                </div>
-                
-                
+                <div class="workitem" class="buscarditem" data-hover="Olivia Knestaut Business Card, 2022, Adobe Illustrator & InDesign">
+                    <embed class="buscard" src="Images/PrintDesign/OliviaBusinessCardModifiedFull.pdf" height = "600px" type="application/pdf">  
                 </div>
             </div>
+            <div class="backtotop">
+                <a href="works.html#header">back to top</a>
+            </div>
+        </div>
+    </div>
             
-        
-        <div class="worksection">
+        <!-- WEB DESIGN -->
+    <div class="outerbox2">
+        <div class="worksection webdesign">
             <h1 id="weblink"><em>web design</em></h1>
             <div class="workitemsection">
                 
             </div>
+            <div class="backtotop">
+                <a href="works.html#header">back to top</a>
+            </div>
         </div>
+    </div>
         
-        
-        <div class="worksection">
-            <h1 id="otherlink"><em>other</em></h1>
+        <!-- OTHER WORKS -->
+    <div class="outerbox3">
+        <div class="worksection otherdesign">
+            <h1 id="otherlink"><em>other work</em></h1>
             <div class="workitemsection">
-                <div class="workitem2">
-                   <iframe class="othercontent" src="https://www.youtube.com/embed/ml7kvh8IFME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="workitem">
                     <p class="frametext"></p>
                 </div>
             </div>
+            <div class="backtotop">
+                <a href="works.html#header">back to top</a>
+            </div>
         </div>
+        
+        
+    </div>
+
     </div>
     
     
     
     
-    <!-- Footer-->
-    <footer id="footermargin" class="headerfooter">
-        <img src="Images/OliviaLogoGrey.png" alt="" class="logo">
+    <!-- Footer -->
+<div class="roundingboxfooter">
+    <footer class="footer">
+        <img class="logo" src="Images/OliviaLogoGrey.png" alt="">
     </footer>
+</div>
+
 </body>

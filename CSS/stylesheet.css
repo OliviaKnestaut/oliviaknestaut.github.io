@@ -16,17 +16,8 @@ a:link, a:visited {
     font-size: 35px;}
 
 a:hover {
-  color: #FFFFFF;}
-
-#innerlinks{
-    color: #000000;
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
-    padding: 30px;}
-
-a#innerlinks:hover {
-  color: #E88CBA;}
+    color: #FFFFFF;
+}
 
 #websitelinks{
     color: #000000;
@@ -34,9 +25,6 @@ a#innerlinks:hover {
     justify-content: center;
     font-size: 35px;
 }
-
-a#websitelinks:hover {
-  color: #E88CBA;}
 
 
 /*GENERAL SETUP*/
@@ -81,12 +69,17 @@ main {
     height: 100%;
 }
 
-.headerfooter {
+.header {
     background: #ABC3CE; /*Blue*/
     display: flex;
     justify-content: center;
     padding: 25px;
-     border: 10px solid #636F75;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.roundingboxheader1{
+    background: #8FAA95;
 }
 
 .logo{
@@ -100,11 +93,23 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 10px solid #636F75;
-    border-top: 0px;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    
 }
-#footermargin{
-    margin-top: 20px;
+.roundingboxheader2{
+    background: #FFFFFF;
+    
+}
+
+.footer {
+    background: #ABC3CE; /*Blue*/
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    padding-top: 40px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
 }
 
 
@@ -126,11 +131,7 @@ main {
     border-bottom-right-radius: 80px;
     border-bottom-left-radius: 80px;
     width: 400px;
-    border-style: solid;
-    border-color: #636F75;
-    border-width: 10px;
-    border-top-width: 0px;
-    height: 1050px;
+    height: 950px;
 }
 
 .skills {
@@ -148,37 +149,29 @@ main {
     padding: 40px;
     padding-top: 0px;
 }
-.APClasses{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
 
-/*Works Page*/
-.portfoliotitle{
+/*About Page*/
+
+.aboutflex{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-
-/*Awards Page*/
-
-.awardblock{
-    margin: 40px;
+.aboutessay{
+    
+    width: 600px;
+    padding: 10px;
+    border-radius: 40px;
 }
-.award{
-    background: #8FAA95; /*Green*/
-    margin: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 50px;
+.bulletin{
+    width: 600px;
+    padding: 10px;
+    border-radius: 40px;
 }
-
 
     /*Navigation*/
 .portfoliolinks{
@@ -194,96 +187,103 @@ main {
     align-items: center; 
 }
 .navimage{
-  border-radius: 50%;
-border: 10px solid #636F75;
+    border-radius: 50%;
+    border: 10px solid #636F75;
     padding: 10px;
     margin:5px;
 }
 
-
 img.navimage:hover {
   border: 10px solid #ABC3CE;
 }
-
-.worksection{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.workitemsection{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-}
-.workitem{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    width: 400px;
-}
-
-.frametext{
-    width: 400px;
-}
-
-.othercontent{
-    width: 90%;
-    height: 200px; 
-}
-
-.workitem2{
-     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
 
 
 
 /*TABLET & DESKTOP CHANGES*/
 @media screen and (min-width: 1200px){
 
-
-.links {
+    /* GENERAL */
+    .links {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 15px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
     }
+
+    .roundingboxheader2{
+        background: #ABC3CE;
+        border-bottom-right-radius: 100px;
+    }
+
     .flex-container{
         display: flex;
         flex-direction: row;
         align-items:flex-start;
     }
     .sidebar{
-        height:1050px;
+        height:950px;
+        margin-bottom: 20px;
     }
 
-.footercontent{
+    .footercontent{
     display: flex;
     flex-direction: row;
     }
 
-.footeritem {
+    .footeritem {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 30%;
     }
+    
     #logo{
         width: 15%;
     }
     
-    iframe{
-        height: 600px;
+    /* WORKS PAGE */
+
+    .workimage, .workitem{
+        width: 800px;
+    }
+
+    .buscard{
+        width: 300px;
+    }
+
+    /*ABOUT PAGE*/
+    .aboutessay{
+        width: 400px; 
+        padding: 30px;
+    }
+
+    .aboutitem {
+        width: 400px;
+    }
+    .aboutflex{
+        display: flex;
+        flex-direction: row;
     }
     
-    .othercontent{
-    width: 90%;
-    height: 500px; 
+}
+
+/*SMALL PHONE SCREEN*/
+@media screen and (max-width: 600px){
+
+    .links {
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        }
+
+    .navimage{
+        width:100px;
+        border: 8px solid #636F75;
+        padding: 8px;
     }
+
+    img.navimage:hover {
+        border: 8px solid #ABC3CE;
+      }
 }

@@ -1,0 +1,76 @@
+/*About Page*/
+
+.aboutflex{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.aboutitem{
+    background-color: #c4d8c8;
+    margin: 10px;
+}
+#sidebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 100px;
+    
+}
+
+.sidebaritem{
+    border: solid 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.sidebaritem1{
+    border-color: rgb(206, 193, 176);
+    background: rgb(226, 219, 209);
+}
+
+.sidebaritem2{
+    
+    border-color: #ABC3CE;
+    background: #c2d4dd;
+}
+.sidebaritem3{
+    border-color: #8FAA95;
+    background: #c4d8c8;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    height: 400px;
+}
+.roundingbox1{
+    background: rgb(226, 219, 209);
+}
+.roundingbox2{
+    background: #c2d4dd;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+
+
+/*TABLET & DESKTOP CHANGES*/
+@media screen and (min-width: 1200px){
+    .aboutitem{
+        width: 60%;
+    }
+    #sidebar{
+        width: 500px;
+    }
+}
+
+/*SMALL PHONE SCREEN*/
+@media screen and (max-width: 600px){
+}

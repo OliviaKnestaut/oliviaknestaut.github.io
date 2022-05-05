@@ -2,7 +2,13 @@
 
 /*Works Consistent size :(*/
 
-.image, .workimage, .frametext{
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image, .workimage1, .frametext{
     width: 400px;
     height: 300px;
 }
@@ -19,28 +25,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
-}
-.workitemsection{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    list-style-type: none;
-}
-.workitem{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
 }
 
-.buscard{
-    width: 300px;
-}
-.videowork{
-    height: 900px;
-}
 .digitaldesign, .printdesign, .webdesign, .otherdesign{
     border: solid 10px;
     border-left: 0px;
@@ -89,17 +75,38 @@
 
  .backtotop{
      width: 90%;
+     padding: 100px;
  }
 
 
 
-/*HOVER*/
+/*HOVER SECTION 1*/
 
-.workitemsection li:hover .caption{
+.workitemsection1{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+}
+
+.workitem1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.workimage1 .workitem1 .workitemsection1 .caption-text1{
+    height: 300px;
+    width: 400px;
+}
+
+.workitemsection1 li:hover .caption1{
     opacity: 1;
 }
 
-.workitemsection .caption{
+.workitemsection1 .caption1{
     cursor: pointer;
     position: absolute;
     opacity: 0;
@@ -110,36 +117,112 @@
     transition:all 0.45s ease-in-out;
 }
 
-.workitemsection img{
+.workitemsection1 image{
     -webkit-transition:all 0.25s ease-in-out;
     -moz-transition:all 0.25s ease-in-out;
     -o-transition:all 0.25s ease-in-out;
     -ms-transition:all 0.25s ease-in-out;
     transition:all 0.25s ease-in-out;
 }
-.workitemsection .blur{
+.blur1{
     background-color: rgba(0,0,0,0.65);
     height: 300px;
     width: 400px;
 }
 
-.workitemsection .caption-text h1{
+.workitemsection1 .caption-text1 h1{
     font-size: 30px;
 }
 
-.workitemsection .caption-text{
+.workitemsection1 .caption-text1{
     z-index: 10;
     color: #fff;
     position: absolute;
     width: 400px;
     height: 300px;
     text-align: center;
-    top:50px;
+    top:40px;
+}
+
+/*HOVER SECTION 2*/
+
+.workitemsection2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+.workitem2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.workimage2 .workitem2 .workitemsection2 .caption-text2{
+    height: 260px;
+    width: 600px;
+}
+
+.workitemsection2 li:hover .caption2{
+    opacity: 1;
+}
+
+.workitemsection2 .caption2{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition:all 0.45s ease-in-out;
+    -moz-transition:all 0.45s ease-in-out;
+    -o-transition:all 0.45s ease-in-out;
+    -ms-transition:all 0.45s ease-in-out;
+    transition:all 0.45s ease-in-out;
+}
+
+.workitemsection2 image{
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    -ms-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+}
+.blur2{
+    background-color: rgba(0,0,0,0.65);
+    height: 260px;
+    width: 600px;
+}
+
+.workitemsection2 .caption-text2 h1{
+    font-size: 30px;
+}
+
+.workitemsection2 .caption-text2{
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    height: 260px;
+    width: 600px;
+    text-align: center;
+    top:40px;
+}
+#magazine{
+    height: 260px;
+    width: 600px;
+}
+
+#businesscard{
+    height: 300px;
+    width: 343px;
 }
 
 
+
+
  /*TABLET & DESKTOP CHANGES*/
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1000px){
 
     /* GENERAL */
     .links {
@@ -177,37 +260,67 @@
     #logo{
         width: 15%;
     }
-    
-    /* WORKS PAGE */
 
-    .workimage, .workitem, li{
+        /*SECTION 1*/
+    .workimage1, .workitem1{
         width: 800px;
         height: 600px;
     }
 
-    .buscard{
-        width: 300px;
-    }
-
-    /*Hover*/
-    .workitemsection .blur{
+    .workitemsection1 .blur1{
         background-color: rgba(0,0,0,0.65);
         height: 600px;
         width: 800px;
     }
-    .workitemsection .caption-text{
+    .workitemsection1 .caption-text1{
         width: 800px;
         height: 600px;
         top:200px;
     }
-    .workitemsection .caption-text h1{
+    .workitemsection1 .caption-text1 h1{
         font-size: 60px;
     }
+
+    /*SECTION 2*/
+    .workitem2{
+        padding: 100px;
+    }
+    .workimage2, .workitem2{
+        width: 1000px;
+        height: 435px;
+    }
+
+    .workitemsection2 .blur2{
+        background-color: rgba(0,0,0,0.65);
+        height: 435px;
+        width: 1000px;
+    }
+    .workitemsection2 .caption-text2{
+        width: 1000px;
+        height: 435px;
+        top:80px;
+    }
+    .workitemsection2 .caption-text2 h1{
+        font-size: 60px;
+    }
+
+    #magazine{
+        height: 435px;
+        width: 1000px;
+    }
+
+    #businesscard{
+        height: 600px;
+        width: 686px;
+    }
+    
+
+
     
 }
 
 /*SMALL PHONE SCREEN*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
 
     .navimage{
         width:100px;
@@ -218,4 +331,36 @@
     img.navimage:hover {
         border: 8px solid #ABC3CE;
       }
+
+
+    /*magazine Smaller*/
+    
+    .workimage2, .workitem2{
+        height: 175px;
+        width: 400px;
+    }
+
+    .workitemsection2 .blur2{
+        background-color: rgba(0,0,0,0.65);
+        height: 175px;
+        width: 400px;
+    }
+    .workitemsection2 .caption-text2{
+        height: 175px;
+        width: 400px;
+        top:10px;
+    }
+    .workitemsection2 .caption-text2 h1{
+        font-size: 20px;
+        line-height: 150%;
+    }
+    
+    #magazine{
+        height: 175px;
+        width: 400px;
+    }
+    
+    .workitem2{
+        padding-bottom: 100px;
+    }
 }

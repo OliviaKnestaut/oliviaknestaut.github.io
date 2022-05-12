@@ -219,6 +219,83 @@ ul{
 }
 
 
+/* WORK SECTION 3*/
+.worksection3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.workitem3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+ .workitem3 .workimage3{
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #636F75;
+ }
+
+ .githublogo{
+    width: 300px;
+    padding: 0px;
+    margin: 0px;
+ }
+
+ #githubbutton{
+    width: 400px;
+    height:200px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#636F75;
+    
+ }
+ 
+ #githubbutton:hover{
+     color:#000000;
+     background-color: #9aa6ad;
+
+ }
+
+ .buttontext{
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;
+ }
+
+ /* WORK SECTION 4*/
+.worksection4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.workitem4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+ .workitem4 .workimage4{
+    height: 300px;
+    width: 400px;
+    background-color: #636F75;
+ }
+ #disconnectedvideo{
+    height: 300px;
+    width: 400px;
+ }
+
 
 
  /*TABLET & DESKTOP CHANGES*/
@@ -233,6 +310,7 @@ ul{
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 100px;
     }
+
 
     .roundingboxheader2{
         background: #ABC3CE;
@@ -262,7 +340,7 @@ ul{
     }
 
         /*SECTION 1*/
-    .workimage1, .workitem1{
+         .workimage1, .workitem1{
         width: 800px;
         height: 600px;
     }
@@ -313,6 +391,48 @@ ul{
         height: 600px;
         width: 686px;
     }
+    /*WORK SECTION 3*/
+     .workitem3 .workimage3{
+        width: 800px;
+        height: 600px;
+    }
+    .workitemsection3{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .githublogo{
+        width: 600px;
+     }
+    
+     #githubbutton{
+        width: 800px;
+        height: 350px;
+     }
+     .buttontext{
+         padding-bottom: 20px;
+         font-size: 70px;
+     }
+
+    /*WORK SECTION 4*/
+    .workitem4 .workimage4{
+        width: 800px;
+        height: 600px;
+    }
+    .workitemsection4{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #disconnectedvideo{
+        height: 600px;
+        width: 800px;
+     }
     
 
 
@@ -362,5 +482,22 @@ ul{
     
     .workitem2{
         padding-bottom: 100px;
+    }
+
+    .workitem3 .workimage3{
+        height: 300px;
+        width: 400px;
+     }
+
+     .worksection3{
+        flex-direction: column;
+    }
+    .workitem4 .workimage4{
+        height: 300px;
+        width: 400px;
+     }
+
+     .worksection4{
+        flex-direction: column;
     }
 }

@@ -1,5 +1,8 @@
 /*About Page*/
 
+p {
+    font-size: 30px;
+}
 .aboutflex{
     display: flex;
     flex-direction: row;
@@ -8,9 +11,27 @@
     flex-wrap: wrap;
 }
 .aboutitem{
-    background-color: #c4d8c8;
     margin: 10px;
 }
+
+.statementheader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+}
+#gradphoto{
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.statementtext{
+    font-size: 60px;
+    line-height: normal;
+}
+
+
 #sidebar{
     display: flex;
     justify-content: center;
@@ -29,9 +50,10 @@
     border-top-right-radius: 100px;
     width: 500px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    height: 650px;
 }
 .sidebaritem1{
     border-color: rgb(206, 193, 176);
@@ -48,7 +70,7 @@
     background: #c4d8c8;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    height: 400px;
+    height: 1100px;
 }
 .roundingbox1{
     background: rgb(226, 219, 209);
@@ -58,19 +80,106 @@
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
 }
+.social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.smimage{
+    padding-left: 0px;
+    padding-right: 30px;
+}
+.sidebarlines{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+#awardtext{
+    font-size: 20px;
+    margin: 30px;
+    margin-top: 0px;
+}
+#essaytext{
+    margin: 50px;
+}
 
 
 
 /*TABLET & DESKTOP CHANGES*/
 @media screen and (min-width: 1200px){
+    .aboutflex{
+        flex-wrap: nowrap;
+    }
     .aboutitem{
-        width: 60%;
+        width: 70%;
     }
     #sidebar{
         width: 500px;
     }
+    .statementheader{
+        flex-wrap: nowrap;
+    }
+    .statementtext{
+        font-size: 70px;
+        line-height: normal;
+    }
 }
 
+/*MID*/
+@media screen and (max-width: 1500px){
+    .aboutflex{
+        flex-wrap: nowrap;
+    } 
+    .aboutitem{
+        width: 50%;
+    }
+    .statementheader{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
 /*SMALL PHONE SCREEN*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1000px){
+    
+    .aboutflex{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .aboutitem{
+        width: 450px;
+    }
+    .statementheader{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    .statementtext{
+        font-size: 60px;
+        line-height: normal;
+        text-align: center;
+    }
+    #gradphoto{
+        margin-right: 0px;
+    }
+    .sidebaritem{
+        width: 450px;
+    }
+    .aboutessay{
+        width: 90%;
+    }
 }

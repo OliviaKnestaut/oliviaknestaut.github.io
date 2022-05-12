@@ -7,6 +7,10 @@ font-family: 'Montserrat', sans-serif;
 */
 /*FONT CSS*/
 
+main{
+    background-color: #FFFFFF;
+}
+
 /*LINKS N STUFF*/
 a:link, a:visited {
   color: #000000;
@@ -172,6 +176,17 @@ img.navimage:hover {
   border: 10px solid #ABC3CE;
 }
 
+/*Intro Vid*/
+.videobox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.introvid{
+    height: 800px;
+    width: 1422px;
+}
 
 
 /*TABLET & DESKTOP CHANGES*/

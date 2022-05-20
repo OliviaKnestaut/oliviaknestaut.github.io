@@ -184,9 +184,10 @@ img.navimage:hover {
     padding: 30px;
 }
 .introvid{
-    height: 800px;
-    width: 1422px;
+    height: 400px;
+    width: 711px;
 }
+
 
 
 /*TABLET & DESKTOP CHANGES*/
@@ -232,29 +233,9 @@ img.navimage:hover {
     #logo{
         width: 15%;
     }
-    
-    /* WORKS PAGE */
-
-    .workimage1, .workitem{
-        width: 800px;
-    }
-
-    .buscard{
-        width: 300px;
-    }
-
-    /*ABOUT PAGE*/
-    .aboutessay{
-        width: 400px; 
-        padding: 30px;
-    }
-
-    .aboutitem {
-        width: 400px;
-    }
-    .aboutflex{
-        display: flex;
-        flex-direction: row;
+    .introvid{
+        height: 800px;
+        width: 1422px;
     }
     
 }
@@ -276,4 +257,9 @@ img.navimage:hover {
     img.navimage:hover {
         border: 8px solid #ABC3CE;
       }
+
+    .introvid{
+        height: 200px;
+        width: 355px;
+    }
 }

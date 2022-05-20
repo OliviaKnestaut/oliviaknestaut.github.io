@@ -3,6 +3,10 @@
 p {
     font-size: 30px;
 }
+.links{
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
 .aboutflex{
     display: flex;
     flex-direction: row;
@@ -181,5 +185,11 @@ iframe{
     }
     .aboutessay{
         width: 90%;
+    }
+    .sidebaritem3{
+        height: 1300px;
+    }
+    #essaytext{
+        font-size: 20px;
     }
 }

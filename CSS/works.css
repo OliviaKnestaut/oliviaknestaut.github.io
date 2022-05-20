@@ -7,6 +7,10 @@ ul{
     justify-content: center;
     align-items: center;
 }
+.links{
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
 
 .image, .workimage1, .frametext{
     width: 400px;
@@ -206,7 +210,7 @@ ul{
     height: 260px;
     width: 600px;
     text-align: center;
-    top:40px;
+    top:50px;
 }
 #magazine{
     height: 260px;
@@ -235,7 +239,7 @@ ul{
 
  .workitem3 .workimage3{
     height: 300px;
-    width: 400px;
+    width: 460px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -376,7 +380,7 @@ ul{
     .workitemsection2 .caption-text2{
         width: 1000px;
         height: 435px;
-        top:80px;
+        top:100px;
     }
     .workitemsection2 .caption-text2 h1{
         font-size: 60px;
@@ -468,10 +472,10 @@ ul{
     .workitemsection2 .caption-text2{
         height: 175px;
         width: 400px;
-        top:10px;
+        top:30px;
     }
     .workitemsection2 .caption-text2 h1{
-        font-size: 20px;
+        font-size: 25px;
         line-height: 150%;
     }
     
@@ -486,7 +490,11 @@ ul{
 
     .workitem3 .workimage3{
         height: 300px;
-        width: 400px;
+        width: 460px;
+     }
+     .workitem3{
+        padding-left: 0px;
+        padding-right: 0px;
      }
 
      .worksection3{
